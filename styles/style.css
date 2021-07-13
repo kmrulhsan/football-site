@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   /* width: 1440px; */
-  /* height: 677px; */
+  height: 677px;
   background: #2d25a0;
   overflow: hidden;
 }
@@ -192,20 +192,19 @@ ticket section styles
 .ticket-title a:hover {
   background-color: crimson;
 }
-.ticket-section:hover {
-  animation-name: sliding-horizontally;
+.ticket-section:hover .ticket-title,
+.ticket-banner {
+  animation-name: transform;
   animation-duration: 4s;
   animation-timing-function: ease-in-out;
 }
-@keyframes sliding-horizontally {
+@keyframes transform {
   from {
-    margin-right: 100%;
-    width: 200%;
+    transform: scale(1.8);
   }
 
   to {
-    margin-left: 0%;
-    width: 100%;
+    transform: scale(1.2);
   }
 }
 /* ----------------
