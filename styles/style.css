@@ -1,0 +1,71 @@
+/* -------------
+fonts 
+----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* -------------
+body styles
+---------------- */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------
+ header styles
+ --------------- */
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  height: 677px;
+  background: #2d25a0;
+  overflow: hidden;
+}
+.header-detail,
+.header-banner {
+  width: 50%;
+}
+.header-detail {
+  padding-left: 155px;
+  padding-right: 51px;
+}
+.header-banner {
+  padding-right: 140px;
+  padding-left: 51px;
+}
+.header-detail h1 {
+  font-size: 64px;
+  color: white;
+  margin-bottom: 27px;
+}
+.header-detail a {
+  text-decoration: none;
+  color: white;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+}
+.header-banner img {
+  width: 556.01px;
+  height: 438px;
+}
+/*-----------------
+ header animation
+ ---------------- */
+
+.header-container:hover .header-detail {
+  animation-name: sliding-horizontally;
+  animation-duration: 4s;
+}
+@keyframes sliding-horizontally {
+  from {
+    margin-right: 100%;
+    width: 200%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
