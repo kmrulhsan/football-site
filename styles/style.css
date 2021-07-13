@@ -1,7 +1,7 @@
 /* -------------
 fonts 
 ----------------*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 /* -------------
 body styles
@@ -68,4 +68,54 @@ body {
   to {
     width: 100%;
   }
+}
+/* --------------
+player section styles
+----------------- */
+.player-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.player-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 27px;
+}
+.player {
+  width: 330px;
+  height: 474px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+.player-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player-image img {
+  width: 300px;
+  height: 256px;
+}
+.player-detail {
+  padding-right: 15px;
+  padding-bottom: 18px;
+  padding-left: 15px;
+}
+.player-detail h2 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #18191f;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+.player-detail p {
+  font-size: 16px;
+  color: #6c6c6c;
+  margin-top: 6px;
 }
