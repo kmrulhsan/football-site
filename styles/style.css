@@ -8,10 +8,15 @@ body styles
 ---------------- */
 body {
   font-family: "Poppins", sans-serif;
+  background: #f3f1ff;
   margin: 0;
   padding: 0;
 }
-
+hr {
+  border: 1px solid #d1d1d1;
+  margin-top: 30px;
+  width: 900px;
+}
 /*--------------
  header styles
  --------------- */
@@ -19,7 +24,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1440px;
+  /* width: 1440px; */
   height: 677px;
   background: #2d25a0;
   overflow: hidden;
@@ -40,6 +45,7 @@ body {
   font-size: 64px;
   color: white;
   margin-bottom: 27px;
+  width: 485px;
 }
 .header-detail a {
   text-decoration: none;
@@ -72,8 +78,9 @@ body {
 /* --------------
 player section styles
 ----------------- */
-.player-container {
+.main-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 70px;
@@ -118,4 +125,39 @@ player section styles
   font-size: 16px;
   color: #6c6c6c;
   margin-top: 6px;
+}
+/* --------------------------
+-----------------------------
+highlight section styles
+---------------------------
+----------------------------- */
+.highlight-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 25px;
+}
+.highlight-box {
+  height: 350px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 0 15px;
+  border-radius: 5px;
+}
+#highlight-title {
+  text-align: start;
+  margin-top: -10px;
+}
+.highlight-video video {
+  width: 320px;
+  height: 240px;
+}
+#highlight-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  margin-top: 15px;
+}
+#highlight-btn:hover {
+  background-color: orangered;
 }
