@@ -12,6 +12,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+}
 hr {
   border: 1px solid #d1d1d1;
   margin-top: 30px;
@@ -159,5 +161,79 @@ highlight section styles
   margin-top: 15px;
 }
 #highlight-btn:hover {
-  background-color: orangered;
+  background-color: crimson;
+}
+/* -----------------
+------------------
+ticket section styles
+----------------
+------------------ */
+.ticket-section {
+  display: flex;
+  
+  align-items: center;
+  margin-top: 50px;
+  
+  background: #2d25a0;
+  overflow: hidden;
+  
+}
+.ticket-title,
+.ticket-banner {
+  width: 50%;
+}
+.ticket-title {
+  
+  padding-left: 155px;
+  padding-right: 51px;
+}
+.ticket-banner {
+  padding-right: 140px;
+  padding-left: 51px;
+}
+.ticket-title a {
+  text-decoration: none;
+  color: white;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+}
+.ticket-title a:hover {
+  background-color: crimson;
+}
+.ticket-section:hover  {
+  animation-name: sliding-horizontally;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  
+}
+@keyframes sliding-horizontally {
+  from {
+    margin-right: 100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/* ----------------
+-------------------
+footer styles
+----------------
+------------------- */
+.footer-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.footer-logo img{
+  width: 483.87px;
+height: 110px;
+}
+.footer-icon{
+  text-align: center;
+  font-size: 18px;
 }
