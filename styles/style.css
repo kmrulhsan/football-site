@@ -242,7 +242,8 @@ media query
   .main-container,
   .highlight-container,
   .header-container,
-  .ticket-section {
+  .ticket-section,
+  .footer-section {
     width: 100%;
   }
   .header-container,
